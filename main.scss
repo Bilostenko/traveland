@@ -1,0 +1,19 @@
+@import"./variables.scss";
+@import "./extends.scss";
+
+header {
+  
+  .logo {
+    font-family: $logo;
+    font-size: 24px;
+  }
+  a {
+    font-family: $main;
+    font-size: $normal;
+  }
+  .header__card{
+    width: 454px;
+    margin-top: 212px;
+    border: none;
+  }
+}

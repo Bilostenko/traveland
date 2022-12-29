@@ -1,0 +1,15 @@
+/* fonts */
+/* font-size */
+header .logo {
+  font-family: "Ribeye", cursive;
+  font-size: 24px;
+}
+header a {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+header .header__card {
+  width: 454px;
+  margin-top: 212px;
+  border: none;
+}/*# sourceMappingURL=main.css.map */
