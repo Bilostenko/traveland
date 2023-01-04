@@ -1,15 +1,143 @@
 /* fonts */
 /* font-size */
-header .logo {
-  font-family: "Ribeye", cursive;
-  font-size: 24px;
+/* text-color */
+header .header__info .header__btn, header .navigation .nav__btn {
+  font-size: 16px;
+  background: #C9453B;
+  border-radius: 5px;
+  padding: 14px 34px 13px 36px;
+  border-style: none;
+  color: white;
+  width: 187px;
+  height: 59px;
+}
+
+.location .row .card .card__text, .location .location__text, header .header__info .header__text {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  line-height: 29px;
+  opacity: 0.6;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+:link,
+:visited {
+  color: inherit;
+}
+
+header,
+section {
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(./img/header_background.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: calc(100vw - 21px);
+  height: 900px;
 }
 header a {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-family: "Ribeye", cursive;
+  font-size: 24px;
+  color: white !important;
 }
-header .header__card {
-  width: 454px;
-  margin-top: 212px;
-  border: none;
+header .navigation {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 52px;
+  flex-wrap: wrap;
+}
+header .navigation .navigation__wrapper {
+  display: flex;
+  align-self: center;
+  gap: 50px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+header .header__info {
+  max-width: 804px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 11%;
+  margin-top: 208px;
+}
+header .header__info h1 {
+  font-family: "Gelasio", serif;
+  color: white;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 78px;
+}
+header .header__info .header__text {
+  margin-bottom: 40px;
+  color: white !important;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.location .location__title {
+  font-family: "Gelasio", serif;
+  color: #000000;
+  font-weight: 500;
+  font-size: 43px;
+  margin-top: 140px;
+  margin-bottom: 20px;
+}
+.location .location__text {
+  color: white !important;
+  margin-bottom: 50px;
+}
+.location .row {
+  box-sizing: border-box;
+}
+.location .row .column {
+  float: left;
+  width: 360px;
+  padding: 0 10px;
+}
+.location .row .row {
+  margin: 0 -5px;
+}
+.location .row .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.location .row .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  gap: 31px;
+}
+.location .row .card img {
+  width: 100%;
+  height: auto;
+}
+.location .row .card .card__title {
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Gelasio", serif;
+  margin-top: 35px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

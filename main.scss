@@ -1,19 +1,156 @@
 @import"./variables.scss";
 @import "./extends.scss";
 
+img {
+  display: block;
+}
+
+body {
+  font-family: $main;
+  color: $main-text-color-b;
+  font-size: $normal;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+:link,
+:visited {
+  color: inherit;
+}
+
+header,
+section {
+  margin: 0 auto;
+}
+
 header {
-  
-  .logo {
+  background-image: url(./img/header_background.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: calc(100vw - 21px);
+  height: 900px;
+
+  a {
     font-family: $logo;
     font-size: 24px;
+    color: $main-text-color-w !important;
   }
-  a {
-    font-family: $main;
-    font-size: $normal;
+
+  .navigation {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 52px;
+    flex-wrap: wrap;
+
+    .navigation__wrapper {
+      display: flex;
+      align-self: center;
+      gap: 50px;
+      color: $main-text-color-w;
+      font-family: $main;
+
+    }
+
+    .nav__btn {
+      @extend %extend-btn
+    }
   }
-  .header__card{
-    width: 454px;
-    margin-top: 212px;
-    border: none;
+
+  .header__info {
+    max-width: 804px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 11%;
+    margin-top: 208px;
+
+    h1 {
+      font-family: $second;
+      color: $main-text-color-w;
+      font-weight: 700;
+      font-size: 65px;
+      line-height: 78px;
+    }
+
+    .header__text {
+      @extend %extend-text;
+      margin-bottom: 40px;
+      color: $main-text-color-w !important;
+    }
+
+    .header__btn {
+      @extend %extend-btn;
+    }
+  }
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .location__title {
+    font-family: $second;
+    color: $main-text-color-b;
+    font-weight: 500;
+    font-size: 43px;
+    margin-top: 140px;
+    margin-bottom: 20px;
+  }
+
+  .location__text {
+    @extend %extend-text;
+    color: $main-text-color-w !important;
+    margin-bottom: 50px;
+  }
+
+  .row {
+    box-sizing: border-box;
+
+    .column {
+      float: left;
+      width: 360px;
+      padding: 0 10px;
+    }
+
+    .row {
+      margin: 0 -5px;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      margin-bottom: 10px;
+      gap: 31px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .card__title {
+        font-weight: 500;
+        font-size: 24px;
+        font-family: $second;
+        margin-top: 35px;
+        margin-bottom: 10px;
+      }
+
+      .card__text {
+        @extend %extend-text
+      }
+    }
   }
 }
