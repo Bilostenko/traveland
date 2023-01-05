@@ -12,11 +12,29 @@ header .header__info .header__btn, header .navigation .nav__btn {
   height: 59px;
 }
 
-.location .row .card .card__text, .location .location__text, header .header__info .header__text {
+.offers .card__text, .offers .offers__text, .location .row .card .card__text, .location .location__text, header .header__info .header__text {
   color: #000000;
   font-family: "Roboto", sans-serif;
   line-height: 29px;
   opacity: 0.6;
+  margin-bottom: 50px;
+}
+
+.offers .offers__title, .location .location__title {
+  font-family: "Gelasio", serif;
+  color: #000000;
+  font-weight: 500;
+  font-size: 43px;
+  margin-top: 140px;
+  margin-bottom: 20px;
+}
+
+.offers .card__title, .location .row .card .card__title {
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Gelasio", serif;
+  margin-top: 35px;
+  margin-bottom: 10px;
 }
 
 img {
@@ -95,18 +113,6 @@ header .header__info .header__text {
   flex-direction: column;
   align-items: center;
 }
-.location .location__title {
-  font-family: "Gelasio", serif;
-  color: #000000;
-  font-weight: 500;
-  font-size: 43px;
-  margin-top: 140px;
-  margin-bottom: 20px;
-}
-.location .location__text {
-  color: white !important;
-  margin-bottom: 50px;
-}
 .location .row {
   box-sizing: border-box;
 }
@@ -134,10 +140,12 @@ header .header__info .header__text {
   width: 100%;
   height: auto;
 }
-.location .row .card .card__title {
-  font-weight: 500;
-  font-size: 24px;
-  font-family: "Gelasio", serif;
-  margin-top: 35px;
-  margin-bottom: 10px;
+.offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.offers img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */

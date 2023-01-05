@@ -13,5 +13,23 @@
   color: $main-text-color-b;
   font-family: $main;
   line-height: 29px;
-  opacity: 0.6
+  opacity: 0.6;
+  margin-bottom: 50px;
+}
+
+%extend-title{
+  font-family: $second;
+  color: $main-text-color-b;
+  font-weight: 500;
+  font-size: 43px;
+  margin-top: 140px;
+  margin-bottom: 20px;
+}
+
+%extend-card__title{
+  font-weight: 500;
+  font-size: 24px;
+  font-family: $second;
+  margin-top: 35px;
+  margin-bottom: 10px;
 }
