@@ -17,7 +17,6 @@ header .header__info .header__btn, header .navigation .nav__btn {
   font-family: "Roboto", sans-serif;
   line-height: 29px;
   opacity: 0.6;
-  margin-bottom: 50px;
 }
 
 .offers .offers__title, .location .location__title {
@@ -60,6 +59,10 @@ a {
 header,
 section {
   margin: 0 auto;
+}
+
+span {
+  font-weight: bold;
 }
 
 header {
@@ -107,11 +110,15 @@ header .header__info h1 {
 header .header__info .header__text {
   margin-bottom: 40px;
   color: white !important;
+  margin-bottom: 50px;
 }
 .location {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.location .location__text {
+  margin-bottom: 50px;
 }
 .location .row {
   box-sizing: border-box;
@@ -140,12 +147,42 @@ header .header__info .header__text {
   width: 100%;
   height: auto;
 }
+.location .row .card .card__text {
+  margin-bottom: 50px;
+}
+
 .offers {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.offers .offers__text {
+  margin-bottom: 50px;
+}
 .offers img {
   width: 100%;
   height: auto;
+}
+.offers .offers__card {
+  box-shadow: -8px -2px 48px -10px rgba(0, 0, 0, 0.83);
+  padding: 5px;
+}
+.offers .card__text {
+  margin: 8px 50px 8px 0;
+  margin-bottom: 0;
+  margin-right: 50px;
+}
+.offers .marker {
+  width: 10px;
+  height: 15px;
+}
+.offers .star {
+  width: 24px;
+}
+.offers .rate {
+  display: flex;
+  align-items: center;
+  width: 163.86px;
+  height: 30px;
+  gap: 5px;
 }/*# sourceMappingURL=main.css.map */
