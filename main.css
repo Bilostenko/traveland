@@ -164,8 +164,9 @@ header .header__info .header__text {
   height: auto;
 }
 .offers .offers__card {
-  box-shadow: -8px -2px 48px -10px rgba(0, 0, 0, 0.83);
+  box-shadow: 0px 79px 117px -56px rgba(0, 0, 0, 0.37);
   padding: 5px;
+  margin-left: 40px;
 }
 .offers .card__text {
   margin: 8px 50px 8px 0;
@@ -185,4 +186,21 @@ header .header__info .header__text {
   width: 163.86px;
   height: 30px;
   gap: 5px;
+}
+.offers .content {
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+.offers .slick-next:before {
+  font-size: 61px;
+  background-color: #786666;
+  border-radius: 50px;
+}
+.offers .slick-prev:before {
+  font-size: 61px;
+  background-color: #786666;
+  border-radius: 50px;
+  margin-left: -40px;
 }/*# sourceMappingURL=main.css.map */
